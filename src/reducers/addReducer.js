@@ -13,8 +13,8 @@ export default (state = addReducerState, action) => {
                     completed: false
                 }
             ]
-        case 'SHOW':
-            return [...state]
+        case 'REMOVE':
+            return state.filter(({ id }) => id !== action.id);
         default:
             return state;
     }

@@ -26,7 +26,7 @@ class App extends Component {
                 <button onClick={ () => this.props.dispatch(addOne(this.state.query)) }>
                     Add
                 </button>
-                <TodoList data={ this.props.add } />
+                <TodoList />
             </div>
         )
     }

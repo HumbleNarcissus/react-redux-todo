@@ -11,3 +11,8 @@ export const addOne = (text) => ({
 export const showAll = () => ({
     type: 'SHOW'
 });
+
+export const removeTodo = ({id}) => ({
+    type: 'REMOVE',
+    id
+});
